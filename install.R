@@ -1,7 +1,7 @@
 install.packages("rstan", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
 # we recommend running this is a fresh R session or restarting your current session
 install.packages("cmdstanr", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
-install_cmdstan()
+cmdstanr::install_cmdstan()
 
 install.packages(c("ggplot2","coda","mvtnorm","devtools","loo","dagitty","shape"))
 devtools::install_github("rmcelreath/rethinking")
