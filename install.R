@@ -1,9 +1,10 @@
-install.packages(c("StanHeaders","rstan"),type="source")
+#install.packages(c("StanHeaders","rstan"),type="source")
+install.packages("rstan", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
 
-install.packages("cmdstanr", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
-library(cmdstanr)
-check_cmdstan_toolchain(fix = TRUE, quiet = TRUE)
-install_cmdstan(cores = 2)
+#install.packages("cmdstanr", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
+#library(cmdstanr)
+#check_cmdstan_toolchain(fix = TRUE, quiet = TRUE)
+#install_cmdstan(cores = 2)
 
 
 install.packages(c("ggplot2","coda","mvtnorm","devtools","loo","dagitty","shape"))
